@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favourite music is here.</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul >
+            <li class="brand">
+                <img src="./logo.jpg" alt="Spotify" />Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <div class="songList">
+            <h1>Your top mixes</h1>
+
+            <div class="songItemContainer">
+                <div class="songItem" id="item1">
+                    <img style="width: 30px" class="cover" src="../covers/1" alt="1" />
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay">
+                        <div class="timeStamp">
+                            <div class="mytimer">
+                                 <!-- 03:31 -->
+                                 <i id="0" class=" songItemPlay ri-play-circle-line"></i> 
+                            </div> 
+                        </div>
+
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img style="width: 30px" class="cover" src="./Cover2.jpg" alt="2" />
+                    <span class="songName">Let Me Love You</span>
+                     <span class="songlistplay">
+                        <span class="timeStamp">
+                            <!-- 03:17 -->
+                            <i id="1" class=" songItemPlay  ri-play-circle-line"></i>
+
+                        </span> 
+
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img style="width: 30px" class="cover" src="../covers/3.jpg" alt="1" />
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay">
+                        <span class="timeStamp">
+                            <!-- 04:01 -->
+                            <i id="2" class=" songItemPlay ri-play-circle-line"></i>
+
+                        </span>
+
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img style="width: 30px" class="cover" src="../covers/4.jpg" alt="1" />
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay">
+                        <span class="timeStamp">
+                            <!-- 04:05 -->
+                            <i id="3" class="songItemPlay   ri-play-circle-line"></i>
+
+                        </span>
+
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img style="width: 30px" class="cover" src="../covers/5.jpg" alt="1" />
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay">
+                        <span class="timeStamp">
+                            <!-- 03:08 -->
+                            <i id="4" class="songItemPlay  ri-play-circle-line"></i>
+
+                        </span>
+
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img style="width: 30px" class="cover" src="../covers/6.jpg" alt="1" />
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay">
+                        <span class="timeStamp">
+                            <!-- 03:23 -->
+                            <i id="5" class="songItemPlay   ri-play-circle-line"></i>
+
+                        </span>
+
+                    </span>
+                </div> 
+                <!-- <div class="songItem">
+                    <img style="width: 30px" class="cover" src="../covers/7.jpg" alt="1" />
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay">
+                        <span class="timeStamp">
+                            05:34
+                            <i id="6" class="songItemPlay  ri-play-circle-line"></i>
+
+                        </span>
+
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img style="width: 30px" class="cover" src="../covers/8.jpg" alt="1" />
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay">
+                        <span class="timeStamp">
+                            05:34
+                            <i id="7" class=" songItemPlay  ri-play-circle-line"></i>
+
+                        </span>
+
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img style="width: 30px" class="cover" src="../covers/9.jpg" alt="1" />
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay">
+                        <span class="timeStamp">
+                            05:34
+                            <i id="8" class="songItemPlay  ri-play-circle-line"></i>
+
+                        </span>
+
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img style="width: 30px" class="cover" src="../covers/10.jpg" alt="1" />
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay">
+                        <span class="timeStamp">
+                            05:34
+                            <i id="9" class="songItemPlay  ri-play-circle-line"></i>
+
+                        </span>
+
+                    </span>
+                </div>
+            </div>
+        </div> -->
+       
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" val="0" min="0" max="100" />
+        <div class="setTimer">
+           <div id="timer">00:00</div> 
+           <div id="timerLength " class="mytimer">03:31 </div>
+        </div>
+        <div class="icons">
+            <i class="ri-skip-back-line" id="previous"></i>
+
+            <i class="ri-play-circle-line" id="masterPlay"></i>
+
+            <i class="ri-skip-forward-line" id="next"></i>
+
+             <!-- <i class="ri-pause-circle-line"></i> -->
+
+       
+        </div>
+        <div class="songInfo">
+            <img src="https://i.gifer.com/5uwq.gif" width="42px" alt="" id="gif" /><span id="masterSong">Let Me Love
+                You</span>
+        </div>
+   
+    </div>
+</body>
+
+
+
+<script src="script.js"></script>
+
+</html>
